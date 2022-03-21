@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.b-yellow {
+	background: var(--m-segond-color, #F8EB20)!important;
+}
+.b-primary {
+	background: var(--m-primary-color, #022E5D)!important;
+}
+.i-primary {
+	color: var(--m-primary-color, #022E5D)!important;
+}
+.i-yellow {
+	color: var(--m-segond-color, #F8EB20)!important;
+}
+.i-white {
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.i-link {
+	color: var(--lien-default-color, #3498DB);
+}
+.i-wgray {
+	color: var(--popup-files-color, #F0F0F0);
+}
+.i-gray {
+	color: var(--text-check-color, #888888);
+}
+.i-8 {
+	font-size: 8px;
+	width: 8px;
+}
+.i-14 {
+	width: 14px;
+	font-size: 14px;
+}
+.i-16 {
+	width: 16px;
+	font-size: 12px;
+}
+.i-22 {
+	width: 22px;
+	font-size: 11px;
+}
+.i-24 {
+	width: 24px;
+	font-size: 16px;
+	margin-top: 3px;
+}
+.i-text {
+	display: block;
+	white-space: nowrap;
+}
+.it-22 {
+	padding-left: 30px;
+}
+.it-24 {
+	margin-top: 4px;
+	padding-left: 80px;
+}
+.icon-circle {
+	text-align: center;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	width: 54px;
+	height: 54px;
+	font-size: 14px;
+	line-height: 44px;
+	color: var(--m-primary-color, #022E5D);
+	border: 3px solid var(--m-segond-color, #F8EB20);
+}
+
+a.lien {
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+a.lien:hover, 
+a.lien:focus {
+	text-decoration: none;
+}
+a.lien-primary {
+	color: var(--m-primary-color, #022E5D);
+}
+a.lien-primary:hover {
+	color: var(--lien-default-color, #3498DB)!important;
+}
+a.lien-default {
+	color: var(--lien-default-color, #3498db);
+}
+a.lien-default:hover {
+	color: var(--lien-hover-color, #1d6fa5);
+}
+
+
+
+
+
+
+.h-primary {
+	position: relative;
+	font-weight: 600;
+	color: var(--m-primary-color, #022E5D);
+}
+.h-white {
+	position: relative;
+	font-weight: 600;
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.h-primary::after,
+.h-white::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -10px;
+	width: 60px;
+	height: 3px;
+}
+.h-primary::after {
+	background: var(--lien-default-color, #3498DB);
+}
+.h-white::after {
+	background: var(--m-segond-color, #F8EB20);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

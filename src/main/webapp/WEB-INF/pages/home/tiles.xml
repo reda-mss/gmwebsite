@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	
+	<!-- HOME -->
+	<definition name="home" template="/WEB-INF/pages/home/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="load" value="/WEB-INF/basics/loading_home.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/basics/home_menu.jsp" />
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/basics/home_footer.jsp" />
+        <put-attribute name="scrolltop" value="/WEB-INF/basics/scroll_top.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_infos.jsp" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- HOME PAGE  -->
+	<definition name="homeIndex" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_home.jsp" />
+	</definition>
+	
+	<!-- ABOUT  -->
+	<definition name="about" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_about.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/about.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- JOBS1  -->
+	<definition name="jobs1" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_jobs1.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/jobs1.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- JOBS2  -->
+	<definition name="jobs2" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_jobs2.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/jobs2.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- JOBS3  -->
+	<definition name="jobs3" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_jobs3.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/jobs3.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- JOBS4  -->
+	<definition name="jobs4" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_jobs4.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/jobs4.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- JOBS5  -->
+	<definition name="jobs5" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_jobs5.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/jobs5.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- CONTACT  -->
+	<definition name="contactUS" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_contact.jsp" />
+	</definition>
+	
+	<!-- PLAN  -->
+	<definition name="plan" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_plan.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/plan.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- MENTION  -->
+	<definition name="mention" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/l_mention.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/mention.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_about.jsp" />
+	</definition>
+	
+	<!-- ERROR -->
+	<definition name="error" template="/WEB-INF/pages/home/layout_error.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+		<put-attribute name="link" value="/WEB-INF/links/l_error.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/error.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/s_error.jsp" />
+	</definition>
+	
+</tiles-definitions>
+
+
+
+
+
+
+
+
+

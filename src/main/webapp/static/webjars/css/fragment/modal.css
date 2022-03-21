@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.modal-backdrop.show {
+    -webkit-opacity: 0.2;
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.modal-dialog {
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.28), 0 1px 1px 0 rgba(0, 0, 0, 0.34);
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.28), 0 1px 1px 0 rgba(0, 0, 0, 0.34);
+}
+.modal-dialog .modal-header {
+	padding: 10px 30px 15px 30px;
+}
+.modal-dialog .modal-content {
+	border: 0;
+}
+.modal.successModal, 
+.modal.errorModal {
+	bottom: auto;
+	z-index: 9050;
+}
+.modal.successModal .modal-dialog, 
+.modal.errorModal .modal-dialog, 
+.modal.warningModal .modal-dialog {
+	font-size: 15px;
+	margin-top: 0 !important;
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+}
+.modal.successModal .modal-dialog, 
+.modal.errorModal .modal-dialog {
+	color: var(--navdark-textactive-color, #FFFFFF) !important;
+	text-shadow: 1px 1px 1px var(--shdow-default-color, rgba(0, 0, 0,.5));
+}
+.modal.successModal .modal-header, 
+.modal.errorModal .modal-header {
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+}
+.modal.successModal .modal-header {
+	background-color: var(--lien-success-color, #3D9970) !important;
+	border-color: var(--lien-success-color, #3D9970) !important;
+}
+.modal.errorModal .modal-header {
+	background-color: var(--lien-error-color, #D73925) !important;
+	border-color: var(--lien-error-color, #D73925) !important;
+}

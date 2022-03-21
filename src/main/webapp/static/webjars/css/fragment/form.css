@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.form-group {
+	margin-bottom: 20px;
+}
+.form-control {
+	padding: 20px 25px;
+	color: var(--text-dark-color, #111111);
+	background-color: var(--navdark-textactive-color, #FFFFFF);
+	border: 1px solid var(--navdark-text-color, #E0E0E0);
+	-webkit-border-radius: 0!important;
+	border-radius: 0!important;
+	min-height: 42px;
+}
+.form-control:focus {
+	color: var(--text-dark-color, #111111);
+	border-color: var(--lien-default-color, #3498DB);
+	background-color: var(--navdark-textactive-color, #FFFFFF);
+	-webkit-box-shadow: 0 0 1px 2px var(--brdr-form-color, rgba(52,152,219,.5));
+	box-shadow: 0 0 1px 2px var(--brdr-form-color, rgba(52,152,219,.5));
+}
+.form-control.form-area {
+	padding: 15px 25px 25px 25px;
+}
+.form-group .error {
+	display: none;
+	font-size: 13px;
+	margin-top: 3px;
+	margin-bottom: 0;
+	color: #ea6051;
+}
+.has-error .form-control, 
+.has-error .form-control:focus {
+	border-color: var(--lien-error-color, #d73925) !important;
+	-webkit-box-shadow: 0 0 1px 2px rgba(231, 76, 60, 0.5) !important;
+	box-shadow: 0 0 1px 2px rgba(231, 76, 60, 0.5) !important;
+}
+.has-error .error {
+	display: block;
+}
+.form-submit {
+	position: relative;
+	display: inline-block;
+}
+.form-submit::after {
+	content: '';
+	position: absolute;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid var(--lien-default-color, #3498DB);
+    border-top: 2px solid var(--m-segond-color, #F8EB20);
+    border-bottom: 2px solid var(--m-segond-color, #F8EB20);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-animation: loader-rotate 1s linear infinite;
+    -webkit-animation: loader-rotate 1s linear infinite;
+    animation: loader-rotate 1s linear infinite;
+}
+.form-submit::after {
+	display: none;
+}
+.form-submit.form-submit-right::after {
+	right: -30px;
+}
+.form-submit.form-submit-left::after {
+	left: -30px;
+}
+.form-submit.form-submit-center::after {
+	left: calc(50% - 9px);
+}
+.has-preload.form-submit::after {
+	display: inline-block;
+}
+.has-preload.form-submit > .btn-submit {
+	cursor: default;
+	opacity: .4;
+	pointer-events: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: var(--lien-default-color, #3498DB)!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

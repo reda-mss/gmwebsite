@@ -1,0 +1,302 @@
+@charset "UTF-8";
+.diapos-owl {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: var(--m-primary-color, #022E5D);
+}
+.diapos-owl .owl-carousel .item {
+	background-size: cover;
+}
+.diapos-owl .owl-carousel,
+.diapos-owl .owl-carousel .item {
+	height: 100%;
+	max-height: 100%;
+}
+.diapos-owl .owl-carousel .item {
+	position: relative;
+}
+.diapos-owl .owl-carousel .owl-dots {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 105;
+	-moz-animation: fadeIn 0.5s ease-out;
+	-webkit-animation: fadeIn 0.5s ease-out;
+	animation: fadeIn 0.5s ease-out;
+}
+.diapos-owl.diapos-lg .owl-carousel .owl-dots {
+	bottom: 50px;
+}
+.diapos-owl .owl-theme .owl-dots .owl-dot span {
+	background: var(--company-opacity-light, rgba(255,255,255,.5));
+}
+.diapos-owl .owl-theme .owl-dots .owl-dot:hover span {
+	background: var(--navdark-textactive-color, #FFFFFF);
+}
+.diapos-owl .owl-theme .owl-dots .owl-dot.active span {
+	background: var(--m-segond-color, #F8EB20);
+}
+.diapos-owl .diapos-style .diapos-content {
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.diapos-owl .diapos-style .diapos-content .d-name {
+	position: relative;
+	letter-spacing: 2px;
+}
+.diapos-owl .diapos-style .diapos-content .d-name::after {
+	position: absolute;
+	content: "";
+	top: 40%;
+	left: calc(100% + 20px);
+	width: 60px;
+	height: 2px;
+	background: var(--m-segond-color, #F8EB20);
+}
+@media ( max-width : 991.98px) {
+	.diapos-owl.diapos-lg,
+	.diapos-owl.diapos-lg .owl-carousel .item {
+		height: 460px;
+	}
+}
+@media ( min-width : 992px) {
+	.diapos-owl .diapos-style .diapos-content {
+		max-width: 64%;
+	}
+	.diapos-owl.diapos-lg,
+	.diapos-owl.diapos-lg .owl-carousel .item {
+		height: 620px;
+	}
+}
+.console-home {
+	padding: 40px 0;
+	vertical-align: middle;
+	border-bottom: 1px solid var(--brdr-sper-color, rgba(0,0,0,.04));
+}
+.about-home {
+	padding: 90px 0;
+	background: var(--popup-files-color, #F0F0F0);
+}
+.jobs-home {
+	padding: 80px 0 60px 0;
+	background: var(--navdark-texthover-color, #F8F8F8);
+}
+.news-home {
+	position: relative;
+	width: 100%;
+    min-height: 640px;
+    overflow: hidden;
+}
+.news-home .news-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: .2;
+	background: var(--m-primary-color, #022E5D);
+}
+.news-home .news-content {
+	position: relative;
+	z-index: 5;
+}
+.news-home .news-content .news-body {
+	padding: 100px 0;
+}
+.news-home .news-content .news-body .news-header {
+	display: inline-block;
+	padding: 15px 90px 10px 90px;
+	color: var(--navdark-textactive-color, #FFFFFF);
+	background: var(--shdow-primary-color, rgba(2, 46, 93,.5));
+}
+.news-home .news-content .news-body .news-header > h2 {
+	text-shadow: 1px 1px 2px var(--shdow-wizard-color, rgba(0, 0, 0,.2));
+}
+.news-home .news-content .news-body .news-footer {
+	padding: 40px;
+	background: var(--navdark-header-color, rgba(255,255,255,.8));
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
+}
+.partners-home {
+	padding: 80px 0 60px 0;
+}
+.vocation-home {
+	padding: 16px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--m-primary-color, #022E5D);
+	border-top: 1px solid var(--brdr-sper-color, rgba(0,0,0,.04));
+	border-bottom: 1px solid var(--brdr-sper-color, rgba(0,0,0,.04));
+}
+.contact-home {
+	padding: 50px 0 70px 0;
+}
+.contact-home .contact-info {
+	margin-top: 40px;
+}
+.footer-home {
+	width: 100%;
+	min-height: 380px;
+	padding: 40px 0;
+}
+.footer-home .brand-footer {
+	line-height: 24px;
+	color: var(--popup-files-color, #F0F0F0);
+}
+.footer-home .brand-social > ul > li {
+	display: inline-block;
+}
+.footer-home .brand-social > ul > li > a {
+	display: block;
+	font-size: 14px;
+	color: var(--navdark-textactive-color, #FFFFFF);
+	margin-right: 25px;
+}
+.footer-home .footer-header {
+	padding: 5px 0 14px 0;
+	border-bottom: 1px solid var(--navdark-table-color, rgba(255,255,255,.3));
+}
+.footer-home .footer-content {
+	line-height: 20px;
+}
+.footer-home .footer-content > a {
+	display: block;
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.footer-home .brand-social > ul > li > a:hover,
+.footer-home .footer-content > a:hover {
+	color: var(--m-segond-color, #F8EB20);
+}
+.footer-home .list-footer > li > a {
+	display: block;
+	color: var(--navdark-navic-color, rgba(255,255,255,.5));
+}
+.footer-home .list-footer > li > a:hover {
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.welcome-about {
+	position: relative;
+	width: 100%;
+	min-height: 16rem;
+}
+.welcome-about .overlay,
+.page-error .overlay,
+.welcome-about .welcome-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.welcome-about .overlay {
+	opacity: 0.7;
+	z-index: 0;
+	background: var(--text-check-color, #888888);
+}
+.welcome-about .welcome-content {
+	z-index: 5;
+}
+.about-company {
+	padding: 60px 0 30px 0;
+}
+.about-detail {
+	position: relative;
+}
+.about-detail .about-detail1 {
+	background: var(--popup-files-color, #F0F0F0);
+}
+@media ( min-width : 768px) {
+	.about-detail .about-detail1,
+	.about-detail .about-detail2 {
+		position: absolute;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		z-index: 1;
+	}
+	.about-detail .about-detail1 {
+		left: 0;
+	}
+	.about-detail .about-detail2 {
+		right: 0;
+	}
+}
+@media ( max-width : 767.98px) {
+	.about-detail .about-detail1,
+	.about-detail .about-detail2 {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.about-detail .about-detail1 {
+		top: 0;
+		height: 54%;
+	}
+	.about-detail .about-detail2 {
+		bottom: 0;
+		height: 46%;
+	}
+	.about-detail .about-content .about-progress {
+		margin-top: 40px;
+	}
+}
+.about-detail .about-content {
+	position: relative;
+	z-index: 5;
+	padding: 70px 0 50px 0;
+}
+.about-detail .about-content .about-progress {
+	padding: 0 40px;
+}
+.jobs-sidebar {
+	padding: 40px 0;
+}
+.jobs-sidebar .jobs-contact {
+	padding: 40px 30px;
+}
+.contact-company {
+	padding: 60px 0 40px 0;
+	background: var(--text-default-color, #1E2024);
+}
+.plan-contact {
+	width: 100%;
+	min-height: 340px;
+	padding: 30px;
+}
+.page-error {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.page-error .overlay {
+	opacity: 0.3;
+	z-index: 0;
+	background: var(--m-primary-color, #022E5D);
+}
+.page-error .bottom-error {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.page-error .bottom-error h1 {
+	padding: 0;
+	margin: 0 0 0 -11px;
+	font-size: 250px;
+	line-height: 110px;
+	font-weight: 800;
+}
+.page-error .bottom-error .b-primary {
+	padding: 60px 0;
+}
+
+
+
+
+
+
+

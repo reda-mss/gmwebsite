@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.boxer {
+	padding: 25px 30px 15px 30px;
+	border-left: 5px solid transparent;
+	background: var(--navdark-texthover-color, #F8F8F8);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+.boxer.boxer-yellow {
+	border-color: var(--m-segond-color, #F8EB20);
+}
+.quick-image {
+	display: block;
+	overflow: hidden;
+}
+.quick-image:hover > img {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+.quick-image.quick-overlay {
+	position: relative;
+}
+.quick-image.quick-overlay::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	transition: all .3s ease;
+	opacity: 0;
+	z-index: 1;
+	background: var(--shdow-primary-color, rgba(2, 46, 93,.5));
+}
+.quick-image.quick-overlay::after {
+	content: "\f067";
+	font-family: "Font Awesome 5 Pro";
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	transition: all .3s ease;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -15px 0 0 -15px;
+	color: #fff;
+	font-size: 30px;
+	opacity: 0;
+	z-index: 1;
+}
+.quick-boxer {
+	height: 100%;
+	color: var(--text-check-color, #888888);
+	background: var(--navdark-textactive-color, #FFFFFF);
+	-webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+.quick-boxer:hover > .quick-image.quick-overlay::before,
+.quick-boxer:hover > .quick-image.quick-overlay::after {
+	opacity: 1;
+}
+.quick-boxer .quick-content {
+	padding: 30px;
+	font-size: 13px;
+}
+.quick-boxer:hover {
+	color: var(--navdark-textactive-color, #FFFFFF);
+	background: var(--m-primary-color, #022e5d);
+}
+.quick-boxer:hover .quick-content a {
+	color: var(--navdark-textactive-color, #FFFFFF);
+}
+.img-lien {
+	display: block;
+	max-width: 200px;
+}
+.img-lien > img {
+	filter: grayscale(1);
+}
+.img-lien:hover > img {
+	filter: grayscale(0);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}
+.brand-image > img  {
+	opacity: 0.92;
+}
+.brand-image:hover > img  {
+	opacity: 1;
+}
+.quick-logo {
+	max-width: 180px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url(../webfont/fonts-googleapis/css/Lato.css);
+@import url(../webfont/font-awesome/css/font-awesome.css);
+
+@import url(help/animate.css);
+@import url(help/nprogress.css);
+@import url(help/helper.css);
+@import url(help/waves.css);
+@import url(help/style.css);
+
+@import url(fragment/icons.css);
+@import url(fragment/menu.css);
+@import url(fragment/page.css);
+@import url(fragment/popup.css);
+@import url(fragment/button.css);
+@import url(fragment/widget.css);
+@import url(fragment/form.css);
+@import url(fragment/modal.css);
+
+
+
+html,
+body {
+  	height: 100%;
+}
+html {
+	font-size: 15px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+	overflow-x: hidden;
+  	font-family: 'Lato', system-ui, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  	color: var(--text-dark-color, #111111);
+  	background: var(--navdark-textactive-color, #FFFFFF);
+}
+.to-top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	display: none;
+	text-align: center;
+	color: var(--m-primary-color, #022E5D);
+	background: var(--m-segond-color, #F8EB20);
+	opacity: 0.5;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	z-index: 1500;
+	font-size: 18px;
+}
+.to-top:hover {
+	opacity: 1;
+}
+.to-top:hover, 
+.to-top:focus {
+	color: var(--m-primary-color, #022E5D);
+}
+
+
+
+
+
+
+
+
+
+
